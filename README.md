@@ -116,7 +116,22 @@ Contributors: <br/>
 - [Isabell Virrey](https://github.com/isabellvirrey) <br />
 - [Brian Aguilar](https://github.com/bswagy)
 
-
 ## License
+[![License: MIT](https://img.shields.io/badge/license-MIT-red)](https://opensource.org/licenses/MIT)
 
-Please refer to the [LICENSE](https://github.com/gurleyryan/Project-2-Group-6?tab=MIT-1-ov-file#MIT-1-ov-file) in the repo.
+SVG Logo Maker © is licensed under the ISC license.  
+
+For more information regarding the SVG Logo Maker's license, please visit: 
+https://opensource.org/licenses/MIT
+
+  
+## Questions?
+  
+### Github:[khoiphan-9194](https://github.com/khoiphan-9194)
+  
+### Reach Me Via Email: phanminhkhoi91@gmail.com
+
+Thanks for viewing!
+
+<img src="https://raw.githubusercontent.com/its-jefe/image-hosting/main/goal-pole.png" width="20%">
+
