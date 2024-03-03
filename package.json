@@ -10,7 +10,7 @@
     "seed": "node seeds/index.js"
   },
   "keywords": [],
-  "author": "Khoi Phan",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",
