@@ -4,7 +4,7 @@ const withAuth = require('../../utils/auth');
   //------------------------------------------------Users
   
 // enter this url to your web browser: http://localhost:3001/api/users
-  router.get('/', withAuth,async (req, res) => {
+  router.get('/', async (req, res) => {
 	try {
 	  const userData = await User.findAll({
 		attributes: { exclude: ['password'] },
@@ -33,7 +33,7 @@ const withAuth = require('../../utils/auth');
 
 
 
-  router.get('/:id',withAuth,async (req, res) => {
+  router.get('/:id', async (req, res) => {
 	try {
 		const userID = await User.findByPk(req.params.id, {
 			attributes: { exclude: ['password'] },
@@ -154,62 +154,27 @@ const withAuth = require('../../utils/auth');
 	}
   });
 
+  module.exports = router;
+
+  /*
+   
 
 
 
-  router.get('/edit/:id',withAuth,async (req, res) => {
+
+  router.post('/',async (req, res) => {
 	try {
-		const userID = await User.findByPk(req.params.id, {
-			attributes: { exclude: ['password'] },
-		});
-
-		const user = userID.get({
-			plain: true
-		});
-
-			res.render('change_email', {
-			...user,
-			logged_in: req.session.logged_in,
-			user_name: req.session.user_name,
-      		user_id:   req.session.user_id,
-    
-		});
-	//res.status(200).json(user);
-
-	} catch (err) {
-		res.status(500).json(err);
-		
-	}
-  });
-
-  router.put('/edit/:id',withAuth,async (req, res) => {
-	try {
-	  const updatedEmail = await User.update(
-		{
-		  //blog_name: req.body.blog_name,
-		  email: req.body.email,
-		
-		},
-		{
-		  where: {
-			  id: req.params.id,
-		  },
-	  })
-	  if (!updatedEmail) {
-		res
-		  .status(404)
-		  .json({ message: `No email found with id = ${req.params.id}` });
-		return;
-	  }
-
+	  const createFestival = await Festival.create({
+		...req.body
+	
+	  });
+  
+	  res.status(200).json(createFestival);
 	} catch (err) {
 	  res.status(400).json(err);
 	}
   });
+  
 
 
-
-
-
-  module.exports = router;
-
+  */

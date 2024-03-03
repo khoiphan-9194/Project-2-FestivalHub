@@ -329,10 +329,10 @@
   }
 
   .card-main img{
-    width: 450px;
+    width: 500px;
     height: 220px;
     border: solid 3px white;
-    margin-left: 60%;
+    margin-left: 70%;
   }
 
 .footer 
@@ -348,9 +348,4 @@ text-align: center;
 #date-div
 {
   margin-left: 50%;
-}
-
-.post-name h1
-{
-  font-size: 25px;
 }

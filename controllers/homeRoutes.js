@@ -33,7 +33,7 @@ router.get('/',async (req, res) => {
 router.get("/dashboard",withAuth,(req, res) => {
 	Booking.findAll({
 		where: {
-      	user_id: req.session.user_id // this will change when user log in.
+      	user_id: req.session.user_id // this will change when user log in
 		},
     attributes:
     {

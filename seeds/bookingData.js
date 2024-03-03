@@ -81,7 +81,13 @@ const bookingData = [
 const seedBooking = async () => {
 
  
+   // const festivalData = await Festival.findAll();
 
+   // const festivals = festivalData.map((festival) => festival.get({ plain: true }));
+
+
+
+	 
 
   for (const book of bookingData) {
 

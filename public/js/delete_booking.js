@@ -13,7 +13,7 @@ async function deleteBlog(event) {
         });
       // if the delete action is successful, redirect to the dashboard page, otherwise display the error
       if (response.ok) {
-          alert("Deleted");
+        alert("Deleted");
           document.location.replace('/dashboard');
           // otherwise, display the error
         } else {
