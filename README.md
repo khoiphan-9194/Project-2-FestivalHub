@@ -165,8 +165,8 @@ This application is powered by Node.js (v16.19.1), Express.js (v.14.18.2), JavaS
 
 ## Usage
 
-
-* In order to run the application, click on the [FestivalHub](https://festival-hub-g6-02035039c638.herokuapp.com/)
+Heroku Link:  https://festival-hub-g6-02035039c638.herokuapp.com/
+* In order to run the application, click on the [FestivalHub]( https://festival-hub-g6-02035039c638.herokuapp.com/)
 The following animation demonstrates the application functionality:
 
 
