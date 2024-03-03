@@ -1,21 +1,22 @@
-const Sequelize = require('sequelize');
-require('dotenv').config();
 
-let sequelize;
+// Dotenv import
+require("dotenv").config();
 
-if (process.env.JAWSDB_URL) {
-  sequelize = new Sequelize(process.env.JAWSDB_URL);
-} else {
-  sequelize = new Sequelize(
-    process.env.DB_NAME,
-    process.env.DB_USER,
-    process.env.DB_PASSWORD,
-    {
-      host: 'localhost',
-      dialect: 'mysql',
-      port: 3306
-    }
-  );
-}
+// Sequelize import
+const Sequelize = require("sequelize");
 
+// Allows for environmental variables to be used
+const sequelize = process.env.JAWSDB_URL
+  ? new Sequelize(process.env.JAWSDB_URL)
+  : new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASSWORD, {
+      host: "localhost",
+      dialect: "mysql",
+      port: 3306,
+      dialectOptions: {
+        decimalNumbers: true,
+      },
+    });
+
+// Sequelize export
 module.exports = sequelize;
+
